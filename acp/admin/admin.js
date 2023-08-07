@@ -1,5 +1,5 @@
-/* global define, $, app, socket */
-define('admin/plugins/sso-discord-alt', ['settings'], function (Settings) {
+/* global define, $, socket */
+define('admin/plugins/sso-discord-alt', ['settings', 'alerts'], function (Settings, alerts) {
   'use strict'
 
   const ACP = {}
@@ -9,7 +9,7 @@ define('admin/plugins/sso-discord-alt', ['settings'], function (Settings) {
 
     $('#save').on('click', function () {
       Settings.save('sso-discord-alt', $('.sso-discord-alt-settings'), function () {
-        app.alert({
+        alerts.alert({
           type: 'success',
           alert_id: 'sso-discord-alt-saved',
           title: 'Settings Saved',

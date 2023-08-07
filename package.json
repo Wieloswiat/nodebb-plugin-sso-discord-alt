@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-discord-alt",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "NodeBB Discord OAuth2 SSO",
   "main": "library.js",
   "repository": {
@@ -44,7 +44,7 @@
     "quick-format": "^2.1.0"
   },
   "nbbpm": {
-    "compatibility": "^2.2.0",
+    "compatibility": "^3.0.0",
     "index": false
   },
   "devDependencies": {
